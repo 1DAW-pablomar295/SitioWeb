@@ -22,12 +22,21 @@
 </nav>
 
 <header>9HTML5</header>
-
+<img id="leon" src="imagenes/patioleones.jpg" width="50" height="50">
 <audio controls>
    <source src="audios/himno_betis_balompie.mp3" type="audio/mpeg">
 </audio>
 <br></br>
-<canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;"></canvas>
+<p><button onclick="draw()">Tryit</button></p>
+<canvas id="myCanvas" width="400" height="400" style="border:1px solid #000000"></canvas>
+<script>
+  function draw() {
+    const c = document.getElementById("myCanvas");
+    const ctx = c.getContext("2d");
+    const img = document.getElementById("leon");
+    ctx.drawImage(img, 10, 10);
+  }
+  </script>
 
 <br></br>
 <mark>GRACIAS A TODOS</mark>
