@@ -13,5 +13,31 @@
                 Valor del area: <output name="y" for="a"> </output>
             
             </form>
+
+            <h1>CUADRADO</h1>
+            <h3>Mueva el indicador para conocer cómo varía el área de un cuadrado.</h3>    
+            <form oninput="j.value=parseInt(b.value * b.value);h.value=parseInt(b.value)">    
+                Longitud del lado:     1 <input type="range" id="b" name="b" value="0"> 100    
+                <br><br>    
+                Longitud del lado: <output name="h" for="b"> </output>
+                <br><br>    
+                Valor del area: <output name="j" for="b"> </output>
+            
+            </form>
+
+            <h1>RECTÁNGULO</h1>
+            <h3>Mueva el indicador para conocer cómo varía el área de un rectángulo.</h3>    
+            <form oninput="j.value=parseInt(b.value * c.value);h.value=parseInt(b.value);i.value=parseInt(c.value)">    
+                Longitud de la base:     1 <input type="range" id="b" name="b" value="0"> 100    
+                <br><br>    
+                Longitud de la altura:     1 <input type="range" id="c" name="c" value="0"> 100    
+                <br><br> 
+                Longitud de la base: <output name="h" for="b"> </output>
+                <br><br> 
+                Longitud de la altura: <output name="i" for="c"> </output>
+                <br><br>    
+                Valor del area: <output name="j" for="b"> </output>
+            
+            </form>
         </body>
 </html>
