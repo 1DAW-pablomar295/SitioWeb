@@ -5,23 +5,55 @@
 	<title>tablas</title>
 
 </head>
+<style>
+#primer{
+background-color: coral;
+}
+#fila{
+	color: aqua;
+}
+#fila2{
+	color: blueviolet;
+}
+#tabla2{
+	background-color: rgb(59, 192, 245);
+}
+#tabla3{
 
+color: crimson;
+}
+#tabla4{
+	background-color: darkcyan;
+	color: darkblue;
+}
+#tabla5{
+	background-color: rgb(193, 231, 104);
+	color: rgb(0, 0, 252);
+}
+#tabla6{
+
+color: rgb(230, 50, 140);
+}
+#tabla7{
+	background-color: rgb(230, 149, 28);
+}
+</style>
 <body>
-	<table border="1" ; align = "center">
+	<table id="primer" border="1" ; align = "center">
 		<caption><b>tabla simple</b></caption>
-		<tr> 
+		<tr id="fila"> 
 			<td>fila1-celda1</td>
 			<td>fila1-celda2</td>
 			<td>fila1-celda3</td>
 		</tr>
-		<tr> 
+		<tr id="fila2"> 
 			<td>fila1-celda1</td>
 			<td>fila1-celda2</td>
 			<td>fila1-celda3</td>
 		</tr>
 	</table>
 	<p><br/></p>
-	<table border="2">
+	<table id="tabla2" border="2">
 		<caption><b>tabla con cabeceras</b></caption>
 		<tr> 
 			<td>fila1-columna1</td>
@@ -35,7 +67,7 @@
 		</tr>
 	</table>
 	<p><br/></p>
-	<table border="1">
+	<table id="tabla3" border="1">
 		<caption><b>tabla con celdas unidas</b></caption>
 		<tr> 
 			<td colspan="3"; align="center">celda sobre 3 columnas</td>
@@ -51,7 +83,7 @@
 		</tr>
 	</table>
 	<p><br/></p>
-	<table border="1">
+	<table id="tabla4" border="1">
 		<caption><b>tabla con filas unidas</b></caption>
 		<tr> 
 			<td rowspan="2">texto sobre dos filas</td>
@@ -64,7 +96,7 @@
 		</tr>
 	</table>
 	<p><br/></p>
-	<table border="5"; cellspacing="20">
+	<table id="tabla5" border="5"; cellspacing="20">
 		<caption><b>tabla con separacion entre celdas</b></caption>
 		<tr> 
 		<td>fila1-celda1</td>
@@ -78,7 +110,7 @@
 		</tr>
 	</table>
 	<p><br/></p>
-	<table border="1"; cellpadding="10">
+	<table id="tabla6" border="1"; cellpadding="10">
 		<caption><b>tabla con separacion entre borde y contenido de la celda</b></caption>
 		<tr> 
 			<td>fila1-celda1</td>
@@ -92,7 +124,7 @@
 		</tr>
 	</table>
 	<p><br/></p>
-	<table border="2">
+	<table id="tabla7" border="2">
 		<caption><b>tabla con cabecera, cuerpo y pie</b></caption>
 		<thead>
 		<tr> 
