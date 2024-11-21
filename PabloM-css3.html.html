@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tarea15.2</title>
+    <style>
+.op {
+  background: rgb(76, 175, 80);
+  padding: 10px;
+  opacity: 60%;
+  width: 85px;
+}
+.columna {
+    column-count: 3;
+    column-gap: 40px;
+    column-rule-style: solid;
+    column-rule-color: aqua;
+    column-rule-style: double;
+    background-color: bisque;
+}
+
+#cajal   { 
+    float:  none;
+      background-color:#5e44dc;
+        color: #ffffff;
+          height:  200px; 
+          width:  200px; 
+          animation-name: caj;
+          animation-duration: 3s;
+          border: 3px solid blue;
+  box-sizing: border-box;
+        }
+@keyframes caj{
+    from {background-color: #5e44dc;}
+  to {background-color: yellow;} 
+}
+
+#caja2  { 
+    background-color:    #942ab4;
+    color: #ffffff;
+    height:  100px;
+    width:  200px;
+    animation-name: caj2;
+    animation-duration: 3s;
+    border: 6px solid blue;
+  box-sizing: border-box;
+
+        }
+@keyframes caj2{
+    from {background-color: #942ab4;}
+  to {background-color: green;}
+}
+#aprtb{
+background-color: lightgrey;
+height: fit-content;
+width:  75px;
+  border: 4px;
+  padding: 5px;
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: 4;
+}
+@keyframes example{
+    0%   {background-color:lightgray left:0px; top:0px;}
+  25%  {background-color:blue; left:200px; top:0px;}
+  50%  {background-color:yellow; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:blue; left:0px; top:0px;}
+}
+div {
+  width: 100px;
+  height: 100px;
+  background-color:greenyellow.;
+  animation-name:pablo ;
+  animation-duration: 5s;
+}
+
+@keyframes pablo {
+  from {background-color: red;}
+  to {background-color:blue;}
+}
+    </style>
+</head>
+<body>
+    <p class="op">Pablo Martín</p>
+    <p class="columna">Lorem ipsum dolor sit amet consectetur adipiscing elit rhoncus sagittis, integer hendrerit mi eget magnis pretium nascetur nisi enim, accumsan quis maecenas class phasellus lobortis interdum vulputate. Fermentum viverra nulla dis congue nisi nibh aenean convallis id, curabitur vulputate a imperdiet vestibulum nam malesuada lectus montes, tempus donec elementum mollis commodo tempor diam hac. Torquent magnis luctus tincidunt class eu cubilia auctor ullamcorper rhoncus netus, litora sed id nunc potenti molestie ultricies augue eros tellus, fermentum est at donec ligula congue libero faucibus hendrerit.
+    </p>
+        <p id="cajal"> CAJA1,  tiene propiedad   float puesta  a none,  por lo que aparece  donde  le corresponde  sin  flotar</p>
+        <p id="caja2">Esta  es la CAJA2 , por defecto  aparece  debajo  de la primera  caja. No usa la propiedad  <b>float</b>  </p>
+<p id="aprtb">PABLINHO TOP</p>
+<div>Esto es una caja</div>
+    </body>
+</html>
