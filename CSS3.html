@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3</title>
+    <style>
+h1{
+    background-color:rgba(255, 0, 0, 0.8);
+}
+.b{
+    background-color: hsl(196, 20%, 50%, 62%);
+}
+h3{
+    background-color: hsla(100, 20%, 80%);
+}
+h4{
+    background-image: linear-gradient(blue, rgb(0, 255, 34), rgb(255, 217, 0), red);
+}
+#nom{
+border-radius: 25px;
+  background: #f53838;
+  padding: 20px; 
+  width: 50px;
+  height: 50px;  
+}
+#ap{
+border-radius: 25px;
+  background: blue;
+  padding: 20px; 
+  width: 75px;
+  height: 75px;  
+}
+#tabla5{
+    box-shadow: 10px 10px 5px black;
+}
+#primer{
+  transition: width 2s, height 2s, transform 2s;
+}
+#primer:hover {
+  width: 300px;
+  height: 300px;
+  transform: rotate(180deg);
+}
+    </style>
+</head>
+<body>
+    <h2>OPACIDAD O TRANSPARENCIA</h2>
+    
+    <h1>Pablo</h1>
+    <h2>TONO, SATURACIÓN Y LUMINOSIDAD</h2>
+    <h2 class="b">Martín</h2>
+    <h3>Toledano</h3>
+<h2>GRADIENTES</h2>
+    <h4>Calle Jose Arpa</h4>
+    <h2>ESQUINAS REDONDEADAS</h2>
+<p id="nom">PABLO</p>
+<p id="ap">MARTÍN TOLEDANO</p>
+
+<h2>SOMBRAS</h2>
+<table id="tabla5"; cellspacing="20">
+    <caption><b>tabla con separacion entre celdas</b></caption>
+    <tr> 
+    <td>fila1-celda1</td>
+    <td>fila1-celda2</td>
+    <td>fila1-celda3</td>
+    </tr>
+    <tr> 
+    <td>fila2-celda1</td>
+    <td>fila2-celda2</td>
+    <td>fila2-celda3</td>
+    </tr>
+</table>
+
+<h2>TRANSICIONES</h2>
+
+<table id="primer">
+    <caption><b>tabla simple</b></caption>
+    <tr id="fila"> 
+        <td>fila1-celda1</td>
+        <td>fila1-celda2</td>
+        <td>fila1-celda3</td>
+    </tr>
+    <tr id="fila2"> 
+        <td>fila1-celda1</td>
+        <td>fila1-celda2</td>
+        <td>fila1-celda3</td>
+    </tr>
+</table>
+
+</body>
+</html>

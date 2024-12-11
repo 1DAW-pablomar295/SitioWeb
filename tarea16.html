@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tarea 16</title>
+    
+    <style>
+       
+        .enfoca:visited  {
+            color:yellow; 
+        }
+        h2 {
+position: relative;
+animation-name: mov;
+animation-duration: 4s;
+animation-iteration-count: infinite;
+}
+
+@keyframes mov {
+0%   { left:-200px; top:0px;}
+50%  { left:200px; top:0px;}
+100% { left:-200px; top:0px;}
+}
+       
+           
+    </style>
+</head>
+<body  background-color: #f4f4f4; margin: 0; padding: 20px;>
+    <h2 style="text-align: center;">CV</h2>
+    
+ 
+   
+        <table  cellpadding="20" cellspacing="10" style="width: 85%; margin: auto; border-collapse: collapse; background-color: white;">
+            <tr> 
+                <td style="background-color: rgb(0, 195, 255); color: white; width: 50%; vertical-align: top;">
+
+               
+   <h3 style="background-color: rgb(0, 100, 158); color: white; padding: 10px; text-align: left;">DATOS PERSONALES</h3>
+                     
+   
+<br></br>
+
+<input type="text" name="nombre" maxlength="30" required style="width: 50%; padding: 5px; margin-bottom: 10px; " placeholder="Nombre"><br>
+                    <input type="text" name="apellidos" maxlength="30" required style="width: 50%; padding: 5x; margin-bottom: 10px; " placeholder="Apellidos"><br>
+                    <input type="text" name="direccion" maxlength="30" required style="width: 20%; padding: 5px; margin-bottom: 10px; " placeholder="Calle">
+                    <input type="text" name="direccion" maxlength="30" required style="width: 20%; padding: 5px; margin-bottom: 10px; " placeholder="Nº">
+                    <input type="text" name="direccion" maxlength="30" required style="width: 20%; padding: 5px; margin-bottom: 10px; " placeholder="Piso">
+                    <br>
+                    <input type="text" name="direccion" maxlength="30" required style="width: 20%; padding: 5px; margin-bottom: 10px;" placeholder="Letra">
+                    <input type="text" name="direccion" maxlength="30" required style="width: 20%; padding: 5px; margin-bottom: 10px; " placeholder="CP">
+                    <input type="text" name="direccion" maxlength="30" required style="width: 20%; padding: 5px; margin-bottom: 10px; " placeholder="Provincia">
+                    <br>
+                    <input type="tel" name="telefono" maxlength="15" required style="width: 50%; padding: 6px; margin-bottom: 10px;" placeholder="Teléfono"><br>
+<input type="email" name="correo" required style="width: 50%; padding: 6px; margin-bottom: 10px;" placeholder="Correo"><br>
+<a class="enfoca" href="index.html">INDEX</a>
+</div>   
+
+<h3 style="background-color: rgb(0, 100, 158); color: white; padding: 10px; text-align: left;">IDIOMAS</h3>
+
+                    
+<p>
+<input type="checkbox" id="Inglés" name="Inglés">
+<label for="Inglés">INGLÉS</label><br/>
+<select name="ingles_hablado">
+                            <option>Hablado: Bajo</option>
+                            <option>Hablado: Medio</option>
+                            <option>Hablado: Alto</option>
+                        </select>
+                        <select name="ingles_escrito">
+                            <option>Escrito: Bajo</option>
+                            <option>Escrito: Medio</option>
+                            <option>Escrito: Alto</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <input type="checkbox" id="Francés" name="Francés">
+<label for="ITALIANO">ITALIANO</label><br/>
+<select name="italiano_hablado">
+                            <option>Hablado: Bajo</option>
+                            <option>Hablado: Medio</option>
+                            <option>Hablado: Alto</option>
+                        </select>
+                        <select name="italiano_escrito">
+                            <option>Escrito: Bajo</option>
+                            <option>Escrito: Medio</option>
+                            <option>Escrito: Alto</option>
+                        </select>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="Otro" name="Otro">
+<label for="Otro">Otro Idioma:  </label><input type="text" name="otro_idioma" placeholder="Especificar" style="width: 100px;">
+                       <br>
+   <select name="otro_hablado">
+                            <option>Hablado: Bajo</option>
+                            <option>Hablado: Medio</option>
+                            <option>Hablado: Alto</option>
+                        </select>
+                        <select name="otro_escrito">
+                            <option>Escrito: Bajo</option>
+                            <option>Escrito: Medio</option>
+                            <option>Escrito: Alto</option>
+                        </select>
+                    </p>
+                </td>
+            </div>
+ 
+           
+                <td style="background-color: rgb(211, 142, 202); width: 50%; vertical-align: top;">
+                    <h3 style="background-color: rgb(156, 92, 148); color: white; padding: 10px; text-align: left;">DATOS ACADÉMICOS</h3>
+                    <p>
+                        <input type="checkbox" name="ESO"> ESO<br/>
+                        <input type="checkbox" name="BACHILLERATO"> BACHILLERATO<br/>
+                        <input type="checkbox" name="CFGM"> CFGM<br/>
+                        <input type="checkbox" name="CFGS"> CFGS<br/>
+                        <input type="checkbox" name="universidad"> EDUCACIÓN UNIVERSITARIA<br/>
+                        <input type="checkbox" name="master"> MASTER POSTGRADO<br/>
+                    </p>
+                    </div>
+ 
+                    <h3 style="background-color: rgb(156, 92, 148); color: white; padding: 10px; text-align: left;">EXPERIENCIA PROFESIONAL</h3>
+                  <p style="color: white;"> Sector Laboral </p>
+                    <select  name="sector" required style="width: 60%; padding: 6px; border-radius: 4px; border: 1px ; margin-bottom: 10px;">
+                        <option>Conductor</option>
+                        <option >Cocinero</option>
+                        <option>Médico</option>
+                        <option>Profesor</option>
+                        <option>Pintor</option>
+                        <option>Jardinero</option>
+                    </select>
+<br></br>
+                    <textarea name="experiencia" rows="3" required style="width: 90%; padding: 6px; border-radius: 4px; border: 1px ;" placeholder="Describe tu experiencia"></textarea><br>
+ </div>
+                    <h3 style="background-color: rgb(156, 92, 148); color: white; padding: 10px; text-align: left;">APTITUDES PERSONALES</h3>
+                   
+                    <textarea name="aptitudes" rows="6" required style="width: 90%; padding: 6px; border-radius: 4px; border: 1px ;" placeholder="Describe tus aptitudes personales"></textarea><br>
+                </td>
+            </tr>
+        </div>
+ 
+        
+            <tr>
+                <td colspan="2">
+                    <input  type="submit" value="Enviar" >
+                    <input  type="reset" value="Borrar" >
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
